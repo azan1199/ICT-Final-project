@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - ThreatZERO</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1 class="logo">Threat<span>ZERO</span></h1>
+    <nav>
+      <a href="Cyber.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="services-hero">
+    <h1><span>Cybersecurity Services</span></h1>
+    <p class="hero-tagline">Securing your digital world with expert solutions</p>
+  </section>
+
+  <section class="services-page">
+    <h2 class="services-title">Our Services</h2>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <h3>Vulnerability Assessment</h3>
+        <p class="price">Basic Scan: $30 - $60<br>Full-report Assessment: $80 - $150</p>
+        <button class="read-btn" onclick="toggleInfo(1)">Read More</button>
+        <div id="info1" class="extra-info">
+          <p>Scans website/server for weaknesses and gives a detailed report.</p>
+          <a href="contact.html" class="avail-btn">Avail Service</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Penetration Testing (Ethical Hacking)</h3>
+        <p class="price">Basic Website Pen-test: $100 - $200<br>Advanced Application/API: $200 - $500</p>
+        <button class="read-btn" onclick="toggleInfo(2)">Read More</button>
+        <div id="info2" class="extra-info">
+          <p>Tries to hack like a real attacker and gives security fixes.</p>
+          <a href="contact.html" class="avail-btn">Avail Service</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Malware Removal</h3>
+        <p class="price">Basic Malware Cleanup: $30 - $70<br>Deep Server Cleaning: $80 - $200</p>
+        <button class="read-btn" onclick="toggleInfo(3)">Read More</button>
+        <div id="info3" class="extra-info">
+          <p>Removes viruses, backdoors, scripts, shell files.</p>
+          <a href="contact.html" class="avail-btn">Avail Service</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Security Hardening</h3>
+        <p class="price">Website Hardening: $50 - $120<br>Server Hardening: $80 - $200</p>
+        <button class="read-btn" onclick="toggleInfo(4)">Read More</button>
+        <div id="info4" class="extra-info">
+          <p>Firewall setup, patching, disabling exploits.</p>
+          <a href="contact.html" class="avail-btn">Avail Service</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Data Backup & Recovery</h3>
+        <p class="price">Simple Recovery: $40 - $90<br>Advanced Recovery: $100 - $300</p>
+        <button class="read-btn" onclick="toggleInfo(5)">Read More</button>
+        <div id="info5" class="extra-info">
+          <p>Recovers deleted data or restores hacked websites.</p>
+          <a href="contact.html" class="avail-btn">Avail Service</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>DDoS Protection Setup</h3>
+        <p class="price">Basic Setup: $30 - $70<br>Advanced Configuration: $100 - $200</p>
+        <button class="read-btn" onclick="toggleInfo(6)">Read More</button>
+        <div id="info6" class="extra-info">
+          <p>Protects your site from bot traffic and heavy attacks.</p>
+          <a href="contact.html" class="avail-btn">Avail Service</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Digital Forensics</h3>
+        <p class="price">Basic Investigation: $80 - $150<br>Full Forensic Report: $200 - $500</p>
+        <button class="read-btn" onclick="toggleInfo(7)">Read More</button>
+        <div id="info7" class="extra-info">
+          <p>Tracks how hacking happened, logs, evidence.</p>
+          <a href="contact.html" class="avail-btn">Avail Service</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Cybersecurity Consultation</h3>
+        <p class="price">30-minute Session: $15 - $40<br>Full Audit Consultation: $50 - $120</p>
+        <button class="read-btn" onclick="toggleInfo(8)">Read More</button>
+        <div id="info8" class="extra-info">
+          <p>Personal advice for individuals or companies.</p>
+          <a href="contact.html" class="avail-btn">Avail Service</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+        <p>Built for Protection. Secured by Design.</p>
+        <p>ThreatZERO</p>
+    </footer>
+
+  <script>
+    function toggleInfo(id) {
+      const box = document.getElementById("info" + id);
+      box.style.display = (box.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

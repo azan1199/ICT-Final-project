@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - ThreatZERO</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <header class="navbar">
+        <h1 class="logo">Threat<span>Zero</span></h1>
+        <nav>
+            <a href="Cyber.html">Home</a>
+            <a href="services.html">Services</a>
+			<a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<section class="blog-hero">
+  <h1><span>Cyber Security Blog</span></h1>
+  <p class="hero-tagline">Latest insights, news & awareness from the cyber world</p>
+</section>
+
+    <section class="blog">
+
+        <div class="blog-container">
+
+            <div class="blog-card">
+                <h3>The Rise of AI Cyber Attacks</h3>
+                <p>Artificial intelligence is now being used by hackers to automate attacks.</p>
+                <button class="read-btn" onclick="toggleInfo(1)">Read More</button>
+                <div id="info1" class="extra-info">
+                    <p>AI-driven attacks include automated phishing, deepfakes, and adaptive malware. AI-based defense systems counter these threats using behavior analysis and machine learning.</p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <h3>Top 5 Password Mistakes</h3>
+                <p>Most breaches occur due to weak passwords.</p>
+                <button class="read-btn" onclick="toggleInfo(2)">Read More</button>
+                <div id="info2" class="extra-info">
+                    <p>Avoid reusing passwords, using names or dates, storing passwords in plain text, ignoring two-factor authentication, and sharing credentials.</p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <h3>Social Engineering: Human Weakness</h3>
+                <p>Scammers manipulate people instead of systems.</p>
+                <button class="read-btn" onclick="toggleInfo(3)">Read More</button>
+                <div id="info3" class="extra-info">
+                    <p>Techniques include phishing, baiting, pretexting, and impersonation. Awareness is the strongest defense.</p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <h3>Is Public WiFi Safe?</h3>
+                <p>Public WiFi is often insecure and unencrypted.</p>
+                <button class="read-btn" onclick="toggleInfo(4)">Read More</button>
+                <div id="info4" class="extra-info">
+                    <p>Always use VPN, avoid online banking, and disable file sharing when connected to public WiFi.</p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <h3>Why Businesses Need Cyber Security</h3>
+                <p>Small businesses are targeted daily by cybercriminals.</p>
+                <button class="read-btn" onclick="toggleInfo(5)">Read More</button>
+                <div id="info5" class="extra-info">
+                    <p>Cybersecurity protects customer data, prevents financial loss, ensures compliance, and builds trust.</p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <h3>The Rise of Ransomware Attacks</h3>
+                <p>Ransomware locks your data and demands payment.</p>
+                <button class="read-btn" onclick="toggleInfo(6)">Read More</button>
+                <div id="info6" class="extra-info">
+                    <p>Regular backups, patching systems, and email filtering reduce ransomware risks.</p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <h3>Protecting Personal Data in the Digital Age</h3>
+                <p>Apps and websites collect more data than ever.</p>
+                <button class="read-btn" onclick="toggleInfo(7)">Read More</button>
+                <div id="info7" class="extra-info">
+                    <p>Use strong privacy settings, avoid oversharing, and encrypt sensitive files.</p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <h3>Cloud Security Myths Debunked</h3>
+                <p>The cloud is not automatically secure.</p>
+                <button class="read-btn" onclick="toggleInfo(8)">Read More</button>
+                <div id="info8" class="extra-info">
+                    <p>Cloud security depends on correct configuration, access control, encryption, and monitoring.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Built for Protection. Secured by Design.</p>
+        <p>ThreatZERO</p>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            const box = document.getElementById("info" + id);
+            box.style.display = (box.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>
